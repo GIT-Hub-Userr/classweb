@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #010304;
+    /* font-size: 17px;
+    line-height: 1.53;
+    font-family:  'Roboto','Poppins', sans-serif;
+    font-weight: 400; */
+    font: 17px/1.53 'Roboto' ,sans-serif;
+   
+}
+
+.banner-part::after {
+    content:'';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    /* background-color: #bf3d42; */
+    background-color:rgba(191,61,66,1);
+    mix-blend-mode: darken;
+}
+
+.banner-part {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    padding:65px 0;
+    position: relative;
+    /* background: color url() repeat 50% 50% /cover; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.banner-part::before{
+    content:'';
+    display:block;
+    height:100vh;
+}
+.bg-strech {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-content {
+    position:relative;
+    z-index:9;
+    max-width:500px;
+    color:#fff;
+    text-align: center;
+}
+.overline-text{
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.banner-content p{
+    margin:0 0 25px;
+}
+.btn{
+    text-transform: uppercase;
+    color:#000;
+    text-decoration: none;
+}
+.btn.primary{
+    padding:15px 15px;
+    background-color: #333333;
+    border:2px solid #fff;
+    color:#fff;
+     width:230px;
+     display: block;
+     /* vertical-align: top; */
+     /* border-radius:46%; */
+      border-radius:30px;/*height/2; */
+      margin:0 auto;
+    /* height:60px; */ 
+}
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    margin:0 0 45px;
+}
+#header{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    padding:15px 50px;
+}
+/* .logo{
+    order:0; position front or back
+ } */
+#header .container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav span{
+    display: block;
+}
